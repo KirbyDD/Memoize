@@ -8,7 +8,8 @@ class CardContainer extends Component {
     this.state= {
       answer: "",
       answerInput: "", 
-      resultMsg: null
+      resultMsg: null,
+      questionNum: 1
     }
   }
   
@@ -35,7 +36,9 @@ class CardContainer extends Component {
   render(){
     return (
       <main> 
-        {this.props.questions.map(question => {
+        {this.props.questions
+        .filter(question => question.id === this.state.questionNum)
+        .map(question => {
           return <Card handleChange={this.handleChange}
                        handleAnswer={this.handleAnswer}
                        resultMsg={this.state.resultMsg}
