@@ -5,23 +5,8 @@ import "./CardContainer.scss"
 class CardContainer extends Component {
   constructor(props) {
     super(props);
-    this.state= {
-      answer: "",
-      answerInput: "", 
-      resultMsg: null,
+    this.state= { 
       questionNum: 1
-    }
-  }
-  
-  handleChange = (currentAnswer) => {
-    this.setState({ answerInput: currentAnswer})
-  }
-
-  handleAnswer = () => {
-    if(this.state.answerInput === this.state.answer){
-      this.setState({ resultMsg: "Trueeeeeee!"})
-    } else {
-      this.setState({ resultMsg: "You hella wrong!"})
     }
   }
 
@@ -46,6 +31,7 @@ class CardContainer extends Component {
                        handlePrev={this.handlePrev}
                        resultMsg={this.state.resultMsg}
                        question={question.question}
+                       answer={question.answer}
                        key={question.id}
                        image={question.image}
                        />
