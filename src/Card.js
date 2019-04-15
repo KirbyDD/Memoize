@@ -5,17 +5,22 @@ class Card extends Component {
   constructor(props){
     super(props);
     this.state = {
-      answerInput: ""
+      answerInput: "",
+      resultMsg: null
     }
   }
 
   captureChange = (e) => {
-    this.props.handleChange(e.target.value.toLowerCase());
+    this.setState({ answerInput: e.target.value.toLowerCase()});
   }
 
-  handleAnswerSubmit = (e) => {
+  handleAnswer = (e) => {
     e.preventDefault();
-    this.props.handleAnswer();
+    if(this.state.answerInput === this.props.answer.toLowerCase()){
+      this.setState({ resultMsg: "Trueeeeeee!"})
+    } else {
+      this.setState({ resultMsg: "You hella wrong!"})
+    }
   }
 
   render(){
@@ -28,11 +33,11 @@ class Card extends Component {
         <h2>Question: {this.props.key}</h2>
         {problemImg}
         <h3>{this.props.question}</h3>
-        {this.props.resultMsg}
+        {this.state.resultMsg}
         <form>
           <input type="text" placeholder=" Type answer here..." onChange={this.captureChange}/>
           <div>
-            <button className="answer-button" onClick={this.handleAnswerSubmit}>Check Answer</button>
+            <button className="answer-button" onClick={this.handleAnswer}>Check Answer</button>
             <button className="prev-button" onClick={this.props.handlePrev}>Previous Question</button>
             <button className="next-button" onClick={this.props.handleNext}>Next Question</button>
           </div>
