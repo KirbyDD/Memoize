@@ -33,8 +33,8 @@ class Card extends Component {
           <input type="text" placeholder=" Type answer here..." onChange={this.captureChange}/>
           <div>
             <button className="answer-button" onClick={this.handleAnswerSubmit}>Check Answer</button>
-            <button className="prev-button">Previous Question</button>
-            <button className="next-button">Next Question</button>
+            <button className="prev-button" onClick={this.props.handlePrev}>Previous Question</button>
+            <button className="next-button" onClick={this.props.handleNext}>Next Question</button>
           </div>
         </form>
       </article>
