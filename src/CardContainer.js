@@ -25,12 +25,13 @@ class CardContainer extends Component {
     }
   }
 
-  handleNext = () => {
-
+  handleNext = (e) => {
+    this.setState({questionNum: this.state.questionNum+1})
+    e.preventDefault();
   }
 
-  handlePrev = () => {
-
+  handlePrev = (e) => {
+    this.setState({questionNum: this.state.questionNum-1})
   }
 
   render(){
@@ -41,6 +42,8 @@ class CardContainer extends Component {
         .map(question => {
           return <Card handleChange={this.handleChange}
                        handleAnswer={this.handleAnswer}
+                       handleNext={this.handleNext}
+                       handlePrev={this.handlePrev}
                        resultMsg={this.state.resultMsg}
                        question={question.question}
                        key={question.id}
