@@ -1,0 +1,32 @@
+article{
+  align-items: center;
+  background-color: white;
+  box-shadow: 5px 5px 10px;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+
+.problem-img {
+  width: 600px;
+}
+
+form {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  input {
+    font-size: 1rem;
+    height: 30px;
+    margin: 10px auto 30px;
+    width: 300px;
+  }
+}
+
+button {
+  font-size: 15px;
+  font-weight: bold;
+  height: 37px;
+  width: 200px;
+}
+

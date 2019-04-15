@@ -1,0 +1,30 @@
+header {
+  align-items: center;
+  background-color: white;
+  box-shadow: 5px 5px 10px;
+  display: flex;
+  justify-content: space-around;
+  margin: 40px auto 50px;
+  width: 80%;
+  img {
+    height: 100px;
+    width: 100px;
+  }
+}
+
+.gun-logo {
+  align-items: center;
+  display: flex;
+}
+
+.logo-stock{
+  padding-top: 50px;
+}
+
+.logo-muzzle{
+  padding-top: 10px;
+}
+
+h1 {
+  font-size: 60px;
+}
