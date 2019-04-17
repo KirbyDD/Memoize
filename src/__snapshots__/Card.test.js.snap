@@ -1,14 +1,21 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`CardContainer should match snapshot when data is passed in  1`] = `
+exports[`Card should match snapshot when data is passed in  1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <Card
+    addStudyCard={[MockFunction]}
     answer="var"
     handleNext={[MockFunction]}
     handlePrev={[MockFunction]}
+    id={1}
     image={true}
     question="Which of the following is an ES5 variable declaration: var, let, or const?"
+    studyList={
+      Array [
+        1,
+      ]
+    }
   />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -27,6 +34,7 @@ ShallowWrapper {
       "children": Array [
         <h2>
           Question: 
+          1
         </h2>,
         <img
           className="problem-img"
@@ -48,6 +56,12 @@ ShallowWrapper {
               onClick={[Function]}
             >
               Check Answer
+            </button>
+            <button
+              className="study-list-button"
+              onClick={[Function]}
+            >
+              Remove from Study List 
             </button>
             <button
               className="prev-button"
@@ -74,13 +88,13 @@ ShallowWrapper {
         "props": Object {
           "children": Array [
             "Question: ",
-            undefined,
+            1,
           ],
         },
         "ref": null,
         "rendered": Array [
           "Question: ",
-          undefined,
+          1,
         ],
         "type": "h2",
       },
@@ -127,6 +141,12 @@ ShallowWrapper {
                 Check Answer
               </button>
               <button
+                className="study-list-button"
+                onClick={[Function]}
+              >
+                Remove from Study List 
+              </button>
+              <button
                 className="prev-button"
                 onClick={[MockFunction]}
               >
@@ -169,6 +189,12 @@ ShallowWrapper {
                   Check Answer
                 </button>,
                 <button
+                  className="study-list-button"
+                  onClick={[Function]}
+                >
+                  Remove from Study List 
+                </button>,
+                <button
                   className="prev-button"
                   onClick={[MockFunction]}
                 >
@@ -195,6 +221,19 @@ ShallowWrapper {
                 },
                 "ref": null,
                 "rendered": "Check Answer",
+                "type": "button",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Remove from Study List ",
+                  "className": "study-list-button",
+                  "onClick": [Function],
+                },
+                "ref": null,
+                "rendered": "Remove from Study List ",
                 "type": "button",
               },
               Object {
@@ -241,6 +280,7 @@ ShallowWrapper {
         "children": Array [
           <h2>
             Question: 
+            1
           </h2>,
           <img
             className="problem-img"
@@ -262,6 +302,12 @@ ShallowWrapper {
                 onClick={[Function]}
               >
                 Check Answer
+              </button>
+              <button
+                className="study-list-button"
+                onClick={[Function]}
+              >
+                Remove from Study List 
               </button>
               <button
                 className="prev-button"
@@ -288,13 +334,13 @@ ShallowWrapper {
           "props": Object {
             "children": Array [
               "Question: ",
-              undefined,
+              1,
             ],
           },
           "ref": null,
           "rendered": Array [
             "Question: ",
-            undefined,
+            1,
           ],
           "type": "h2",
         },
@@ -341,6 +387,12 @@ ShallowWrapper {
                   Check Answer
                 </button>
                 <button
+                  className="study-list-button"
+                  onClick={[Function]}
+                >
+                  Remove from Study List 
+                </button>
+                <button
                   className="prev-button"
                   onClick={[MockFunction]}
                 >
@@ -383,6 +435,12 @@ ShallowWrapper {
                     Check Answer
                   </button>,
                   <button
+                    className="study-list-button"
+                    onClick={[Function]}
+                  >
+                    Remove from Study List 
+                  </button>,
+                  <button
                     className="prev-button"
                     onClick={[MockFunction]}
                   >
@@ -409,6 +467,565 @@ ShallowWrapper {
                   },
                   "ref": null,
                   "rendered": "Check Answer",
+                  "type": "button",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Remove from Study List ",
+                    "className": "study-list-button",
+                    "onClick": [Function],
+                  },
+                  "ref": null,
+                  "rendered": "Remove from Study List ",
+                  "type": "button",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Previous Question",
+                    "className": "prev-button",
+                    "onClick": [MockFunction],
+                  },
+                  "ref": null,
+                  "rendered": "Previous Question",
+                  "type": "button",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Next Question",
+                    "className": "next-button",
+                    "onClick": [MockFunction],
+                  },
+                  "ref": null,
+                  "rendered": "Next Question",
+                  "type": "button",
+                },
+              ],
+              "type": "div",
+            },
+          ],
+          "type": "form",
+        },
+      ],
+      "type": "article",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromError": true,
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": false,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+  Symbol(enzyme.__childContext__): null,
+}
+`;
+
+exports[`Card should match snapshot when data is passed in  2`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Card
+    addStudyCard={[MockFunction]}
+    answer="var"
+    handleNext={[MockFunction]}
+    handlePrev={[MockFunction]}
+    id={1}
+    image={true}
+    question="Which of the following is an ES5 variable declaration: var, let, or const?"
+    studyList={
+      Array [
+        1,
+      ]
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <h2>
+          Question: 
+          1
+        </h2>,
+        <img
+          className="problem-img"
+          src={true}
+        />,
+        <h3>
+          Which of the following is an ES5 variable declaration: var, let, or const?
+        </h3>,
+        null,
+        <form>
+          <input
+            onChange={[Function]}
+            placeholder=" Type answer here..."
+            type="text"
+          />
+          <div>
+            <button
+              className="answer-button"
+              onClick={[Function]}
+            >
+              Check Answer
+            </button>
+            <button
+              className="study-list-button"
+              onClick={[Function]}
+            >
+              Remove from Study List 
+            </button>
+            <button
+              className="prev-button"
+              onClick={[MockFunction]}
+            >
+              Previous Question
+            </button>
+            <button
+              className="next-button"
+              onClick={[MockFunction]}
+            >
+              Next Question
+            </button>
+          </div>
+        </form>,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            "Question: ",
+            1,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          "Question: ",
+          1,
+        ],
+        "type": "h2",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "className": "problem-img",
+          "src": true,
+        },
+        "ref": null,
+        "rendered": null,
+        "type": "img",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Which of the following is an ES5 variable declaration: var, let, or const?",
+        },
+        "ref": null,
+        "rendered": "Which of the following is an ES5 variable declaration: var, let, or const?",
+        "type": "h3",
+      },
+      null,
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <input
+              onChange={[Function]}
+              placeholder=" Type answer here..."
+              type="text"
+            />,
+            <div>
+              <button
+                className="answer-button"
+                onClick={[Function]}
+              >
+                Check Answer
+              </button>
+              <button
+                className="study-list-button"
+                onClick={[Function]}
+              >
+                Remove from Study List 
+              </button>
+              <button
+                className="prev-button"
+                onClick={[MockFunction]}
+              >
+                Previous Question
+              </button>
+              <button
+                className="next-button"
+                onClick={[MockFunction]}
+              >
+                Next Question
+              </button>
+            </div>,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "onChange": [Function],
+              "placeholder": " Type answer here...",
+              "type": "text",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "input",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <button
+                  className="answer-button"
+                  onClick={[Function]}
+                >
+                  Check Answer
+                </button>,
+                <button
+                  className="study-list-button"
+                  onClick={[Function]}
+                >
+                  Remove from Study List 
+                </button>,
+                <button
+                  className="prev-button"
+                  onClick={[MockFunction]}
+                >
+                  Previous Question
+                </button>,
+                <button
+                  className="next-button"
+                  onClick={[MockFunction]}
+                >
+                  Next Question
+                </button>,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Check Answer",
+                  "className": "answer-button",
+                  "onClick": [Function],
+                },
+                "ref": null,
+                "rendered": "Check Answer",
+                "type": "button",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Remove from Study List ",
+                  "className": "study-list-button",
+                  "onClick": [Function],
+                },
+                "ref": null,
+                "rendered": "Remove from Study List ",
+                "type": "button",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Previous Question",
+                  "className": "prev-button",
+                  "onClick": [MockFunction],
+                },
+                "ref": null,
+                "rendered": "Previous Question",
+                "type": "button",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Next Question",
+                  "className": "next-button",
+                  "onClick": [MockFunction],
+                },
+                "ref": null,
+                "rendered": "Next Question",
+                "type": "button",
+              },
+            ],
+            "type": "div",
+          },
+        ],
+        "type": "form",
+      },
+    ],
+    "type": "article",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <h2>
+            Question: 
+            1
+          </h2>,
+          <img
+            className="problem-img"
+            src={true}
+          />,
+          <h3>
+            Which of the following is an ES5 variable declaration: var, let, or const?
+          </h3>,
+          null,
+          <form>
+            <input
+              onChange={[Function]}
+              placeholder=" Type answer here..."
+              type="text"
+            />
+            <div>
+              <button
+                className="answer-button"
+                onClick={[Function]}
+              >
+                Check Answer
+              </button>
+              <button
+                className="study-list-button"
+                onClick={[Function]}
+              >
+                Remove from Study List 
+              </button>
+              <button
+                className="prev-button"
+                onClick={[MockFunction]}
+              >
+                Previous Question
+              </button>
+              <button
+                className="next-button"
+                onClick={[MockFunction]}
+              >
+                Next Question
+              </button>
+            </div>
+          </form>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              "Question: ",
+              1,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            "Question: ",
+            1,
+          ],
+          "type": "h2",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "className": "problem-img",
+            "src": true,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "img",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Which of the following is an ES5 variable declaration: var, let, or const?",
+          },
+          "ref": null,
+          "rendered": "Which of the following is an ES5 variable declaration: var, let, or const?",
+          "type": "h3",
+        },
+        null,
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <input
+                onChange={[Function]}
+                placeholder=" Type answer here..."
+                type="text"
+              />,
+              <div>
+                <button
+                  className="answer-button"
+                  onClick={[Function]}
+                >
+                  Check Answer
+                </button>
+                <button
+                  className="study-list-button"
+                  onClick={[Function]}
+                >
+                  Remove from Study List 
+                </button>
+                <button
+                  className="prev-button"
+                  onClick={[MockFunction]}
+                >
+                  Previous Question
+                </button>
+                <button
+                  className="next-button"
+                  onClick={[MockFunction]}
+                >
+                  Next Question
+                </button>
+              </div>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "onChange": [Function],
+                "placeholder": " Type answer here...",
+                "type": "text",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "input",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <button
+                    className="answer-button"
+                    onClick={[Function]}
+                  >
+                    Check Answer
+                  </button>,
+                  <button
+                    className="study-list-button"
+                    onClick={[Function]}
+                  >
+                    Remove from Study List 
+                  </button>,
+                  <button
+                    className="prev-button"
+                    onClick={[MockFunction]}
+                  >
+                    Previous Question
+                  </button>,
+                  <button
+                    className="next-button"
+                    onClick={[MockFunction]}
+                  >
+                    Next Question
+                  </button>,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Check Answer",
+                    "className": "answer-button",
+                    "onClick": [Function],
+                  },
+                  "ref": null,
+                  "rendered": "Check Answer",
+                  "type": "button",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Remove from Study List ",
+                    "className": "study-list-button",
+                    "onClick": [Function],
+                  },
+                  "ref": null,
+                  "rendered": "Remove from Study List ",
                   "type": "button",
                 },
                 Object {

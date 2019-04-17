@@ -1,0 +1,252 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CardContainer should match snapshot when data is passed in  1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Header />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <div
+          className="gun-logo"
+        >
+          <img
+            className="logo-stock"
+            src="https://www.aeroprecisionusa.com/media/catalog/product/cache/8a4e8be590f5e34deaab5118a0859ee5/a/p/aprh100033-m4-sliding-stock-1_1.jpg"
+          />
+          <h1>
+            Scope Practice
+          </h1>
+          <img
+            className="logo-muzzle"
+            src="http://tradingplacepawn.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/l/a/lantac-dragon-3.jpg"
+          />
+        </div>,
+        <img
+          alt="Weapon scope crosshair"
+          src="https://image.sportsmansguide.com/adimgs/l/reticle_445_ts.jpg"
+        />,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <img
+              className="logo-stock"
+              src="https://www.aeroprecisionusa.com/media/catalog/product/cache/8a4e8be590f5e34deaab5118a0859ee5/a/p/aprh100033-m4-sliding-stock-1_1.jpg"
+            />,
+            <h1>
+              Scope Practice
+            </h1>,
+            <img
+              className="logo-muzzle"
+              src="http://tradingplacepawn.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/l/a/lantac-dragon-3.jpg"
+            />,
+          ],
+          "className": "gun-logo",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "className": "logo-stock",
+              "src": "https://www.aeroprecisionusa.com/media/catalog/product/cache/8a4e8be590f5e34deaab5118a0859ee5/a/p/aprh100033-m4-sliding-stock-1_1.jpg",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "img",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Scope Practice",
+            },
+            "ref": null,
+            "rendered": "Scope Practice",
+            "type": "h1",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "className": "logo-muzzle",
+              "src": "http://tradingplacepawn.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/l/a/lantac-dragon-3.jpg",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "img",
+          },
+        ],
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "alt": "Weapon scope crosshair",
+          "src": "https://image.sportsmansguide.com/adimgs/l/reticle_445_ts.jpg",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": "img",
+      },
+    ],
+    "type": "header",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div
+            className="gun-logo"
+          >
+            <img
+              className="logo-stock"
+              src="https://www.aeroprecisionusa.com/media/catalog/product/cache/8a4e8be590f5e34deaab5118a0859ee5/a/p/aprh100033-m4-sliding-stock-1_1.jpg"
+            />
+            <h1>
+              Scope Practice
+            </h1>
+            <img
+              className="logo-muzzle"
+              src="http://tradingplacepawn.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/l/a/lantac-dragon-3.jpg"
+            />
+          </div>,
+          <img
+            alt="Weapon scope crosshair"
+            src="https://image.sportsmansguide.com/adimgs/l/reticle_445_ts.jpg"
+          />,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <img
+                className="logo-stock"
+                src="https://www.aeroprecisionusa.com/media/catalog/product/cache/8a4e8be590f5e34deaab5118a0859ee5/a/p/aprh100033-m4-sliding-stock-1_1.jpg"
+              />,
+              <h1>
+                Scope Practice
+              </h1>,
+              <img
+                className="logo-muzzle"
+                src="http://tradingplacepawn.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/l/a/lantac-dragon-3.jpg"
+              />,
+            ],
+            "className": "gun-logo",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "className": "logo-stock",
+                "src": "https://www.aeroprecisionusa.com/media/catalog/product/cache/8a4e8be590f5e34deaab5118a0859ee5/a/p/aprh100033-m4-sliding-stock-1_1.jpg",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "img",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Scope Practice",
+              },
+              "ref": null,
+              "rendered": "Scope Practice",
+              "type": "h1",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "className": "logo-muzzle",
+                "src": "http://tradingplacepawn.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/l/a/lantac-dragon-3.jpg",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "img",
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "alt": "Weapon scope crosshair",
+            "src": "https://image.sportsmansguide.com/adimgs/l/reticle_445_ts.jpg",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "img",
+        },
+      ],
+      "type": "header",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromError": true,
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": false,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+  Symbol(enzyme.__childContext__): null,
+}
+`;

@@ -42,27 +42,54 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <Card
-          answer="var"
-          handleNext={[Function]}
-          handlePrev={[Function]}
-          image={null}
-          question="Which of the following is an ES5 variable declaration: var, let, or const?"
-        />,
+        <button
+          className="show-list"
+          onClick={[Function]}
+        >
+          Show Study List
+        </button>,
+        Array [
+          <Card
+            addStudyCard={[Function]}
+            answer="var"
+            handleNext={[Function]}
+            handlePrev={[Function]}
+            id={1}
+            image={null}
+            question="Which of the following is an ES5 variable declaration: var, let, or const?"
+            studyList={Array []}
+          />,
+        ],
       ],
     },
     "ref": null,
     "rendered": Array [
       Object {
         "instance": null,
-        "key": "1",
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Show Study List",
+          "className": "show-list",
+          "onClick": [Function],
+        },
+        "ref": null,
+        "rendered": "Show Study List",
+        "type": "button",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
         "nodeType": "class",
         "props": Object {
+          "addStudyCard": [Function],
           "answer": "var",
           "handleNext": [Function],
           "handlePrev": [Function],
+          "id": 1,
           "image": null,
           "question": "Which of the following is an ES5 variable declaration: var, let, or const?",
+          "studyList": Array [],
         },
         "ref": null,
         "rendered": null,
@@ -78,27 +105,54 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <Card
-            answer="var"
-            handleNext={[Function]}
-            handlePrev={[Function]}
-            image={null}
-            question="Which of the following is an ES5 variable declaration: var, let, or const?"
-          />,
+          <button
+            className="show-list"
+            onClick={[Function]}
+          >
+            Show Study List
+          </button>,
+          Array [
+            <Card
+              addStudyCard={[Function]}
+              answer="var"
+              handleNext={[Function]}
+              handlePrev={[Function]}
+              id={1}
+              image={null}
+              question="Which of the following is an ES5 variable declaration: var, let, or const?"
+              studyList={Array []}
+            />,
+          ],
         ],
       },
       "ref": null,
       "rendered": Array [
         Object {
           "instance": null,
-          "key": "1",
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Show Study List",
+            "className": "show-list",
+            "onClick": [Function],
+          },
+          "ref": null,
+          "rendered": "Show Study List",
+          "type": "button",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
           "nodeType": "class",
           "props": Object {
+            "addStudyCard": [Function],
             "answer": "var",
             "handleNext": [Function],
             "handlePrev": [Function],
+            "id": 1,
             "image": null,
             "question": "Which of the following is an ES5 variable declaration: var, let, or const?",
+            "studyList": Array [],
           },
           "ref": null,
           "rendered": null,
