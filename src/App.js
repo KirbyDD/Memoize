@@ -20,7 +20,6 @@ class App extends Component {
 
   
   render() {
-    console.log(this.state.questionArray)
     return (
       <div className="App">
         <Header className="App-header" />
