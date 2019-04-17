@@ -24,13 +24,19 @@ class Card extends Component {
   }
 
   render(){
+    let favbtn;
+    if(this.props.studyList.includes(this.props.id)){
+      favbtn = "Remove from Study List "
+    } else {
+      favbtn = "Add to Study List"
+    }
     let problemImg;
     if(this.props.image){
       problemImg = <img src={this.props.image} className="problem-img"/>;
     }
     return(
       <article>
-        <h2>Question: {this.props.key}</h2>
+        <h2>Question: {this.props.id}</h2>
         {problemImg}
         <h3>{this.props.question}</h3>
         {this.state.resultMsg}
@@ -38,6 +44,10 @@ class Card extends Component {
           <input type="text" placeholder=" Type answer here..." onChange={this.captureChange}/>
           <div>
             <button className="answer-button" onClick={this.handleAnswer}>Check Answer</button>
+            <button className="study-list-button" onClick={(e) => {
+              e.preventDefault()
+              this.props.addStudyCard(this.props.id)
+            }}>{favbtn}</button>
             <button className="prev-button" onClick={this.props.handlePrev}>Previous Question</button>
             <button className="next-button" onClick={this.props.handleNext}>Next Question</button>
           </div>
