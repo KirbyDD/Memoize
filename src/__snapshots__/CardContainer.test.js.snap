@@ -1,0 +1,137 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CardContainer should match snapshot when data is passed in  1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <CardContainer
+    questions={
+      Array [
+        Object {
+          "answer": "var",
+          "id": 1,
+          "image": null,
+          "question": "Which of the following is an ES5 variable declaration: var, let, or const?",
+        },
+        Object {
+          "answer": "const",
+          "id": 2,
+          "image": null,
+          "question": "Which of the following is a non-mutable variable declaration: var, let, or const?",
+        },
+        Object {
+          "answer": "let",
+          "id": 3,
+          "image": null,
+          "question": "Which of the following is a mutable ES6 variable declaration: var, let, or const?",
+        },
+      ]
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <Card
+          answer="var"
+          handleNext={[Function]}
+          handlePrev={[Function]}
+          image={null}
+          question="Which of the following is an ES5 variable declaration: var, let, or const?"
+        />,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": "1",
+        "nodeType": "class",
+        "props": Object {
+          "answer": "var",
+          "handleNext": [Function],
+          "handlePrev": [Function],
+          "image": null,
+          "question": "Which of the following is an ES5 variable declaration: var, let, or const?",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+    ],
+    "type": "main",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <Card
+            answer="var"
+            handleNext={[Function]}
+            handlePrev={[Function]}
+            image={null}
+            question="Which of the following is an ES5 variable declaration: var, let, or const?"
+          />,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": "1",
+          "nodeType": "class",
+          "props": Object {
+            "answer": "var",
+            "handleNext": [Function],
+            "handlePrev": [Function],
+            "image": null,
+            "question": "Which of the following is an ES5 variable declaration: var, let, or const?",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
+      "type": "main",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromError": true,
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": false,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+  Symbol(enzyme.__childContext__): null,
+}
+`;

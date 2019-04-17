@@ -12,7 +12,6 @@ class CardContainer extends Component {
 
   handleNext = (e) => {
     this.setState({questionNum: this.state.questionNum+1})
-    e.preventDefault();
   }
 
   handlePrev = (e) => {
@@ -25,11 +24,8 @@ class CardContainer extends Component {
         {this.props.questions
         .filter(question => question.id === this.state.questionNum)
         .map(question => {
-          return <Card handleChange={this.handleChange}
-                       handleAnswer={this.handleAnswer}
-                       handleNext={this.handleNext}
+          return <Card handleNext={this.handleNext}
                        handlePrev={this.handlePrev}
-                       resultMsg={this.state.resultMsg}
                        question={question.question}
                        answer={question.answer}
                        key={question.id}
