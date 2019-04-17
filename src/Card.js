@@ -19,7 +19,7 @@ class Card extends Component {
     if(this.state.answerInput === this.props.answer.toLowerCase()){
       this.setState({ resultMsg: "Trueeeeeee!"})
     } else {
-      this.setState({ resultMsg: "You hella wrong!"})
+      this.setState({ resultMsg: "Nahh try again!"})
     }
   }
 
