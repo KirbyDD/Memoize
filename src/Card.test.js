@@ -49,12 +49,12 @@ describe('Card', () => {
   it('shandleAnswer should return correct answer error message', () => {
     wrapper.setState({  answerInput: 'var'});
     wrapper.find(".answer-button").simulate('click', { preventDefault:() =>{}});
-    expect(wrapper.state('resultMsg')).toEqual("Trueeeeeee!")
+    expect(wrapper.state()).toEqual({ answerInput:"", resultMsg: "Trueeeeeee!" })
   });
   it('handleAnswer should return wrong answer error message', () => {
     wrapper.setState({  answerInput: 'let'});
     wrapper.find(".answer-button").simulate('click', { preventDefault:() =>{}});
-    expect(wrapper.state('resultMsg')).toEqual("Nahh try again!")
+    expect(wrapper.state()).toEqual({ answerInput:"", resultMsg: "Nahh try again!" })
   });
   it('should update the state of the answerInput on change', () => {
     expect(wrapper.state('answerInput')).toEqual("")

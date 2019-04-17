@@ -17,9 +17,11 @@ class Card extends Component {
   handleAnswer = e => {
     e.preventDefault();
     if (this.state.answerInput === this.props.answer.toLowerCase()) {
-      this.setState({ resultMsg: "Trueeeeeee!" });
-    } else {
-      this.setState({ resultMsg: "Nahh try again!" });
+      this.setState({ answerInput:"", resultMsg: "Trueeeeeee!" }, () => setTimeout(() =>{
+        this.setState({resultMsg: null})}, 2000))
+      } else {
+      this.setState({ answerInput:"", resultMsg: "Nahh try again!" }, () => setTimeout(() =>{
+        this.setState({resultMsg: null})}, 2000));
     }
   };
 
@@ -45,6 +47,7 @@ class Card extends Component {
             type="text"
             placeholder=" Type answer here..."
             onChange={this.captureChange}
+            value={this.state.answerInput}
           />
           <div>
             <button className="answer-button" onClick={this.handleAnswer}>
