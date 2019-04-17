@@ -1,68 +1,42 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Memoize/Scope Practice
 
-## Available Scripts
+## Description
 
-In the project directory, you can run:
+This solo project is a simple site, built with React, that allows the user to practice understanding scope through flashcards.
+User will input answer to question and receive a message if it is correct or incorrect. User can also save individual questions to a study list for more specific study material
 
-### `npm start`
+## Setup
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Simply start by cloning the repo:
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+```bash
+git clone git@github.com:KirbyDD/Memoize.git
+```
 
-### `npm test`
+Once you have cloned the repo, to install the library dependencies. Run:
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```bash
+npm install
+```
 
-### `npm run build`
+Run `npm start` in your terminal. Go to `http://localhost:3000/` and you should see a live version of the application if installed correctly.
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Screenshots
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+<img width="1439" alt="Screen Shot 2019-04-17 at 11 04 15 AM" src="https://user-images.githubusercontent.com/36940278/56307746-d30a3080-6102-11e9-9aff-fc2c74318f66.png">
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<img width="1437" alt="Screen Shot 2019-04-17 at 11 06 10 AM" src="https://user-images.githubusercontent.com/36940278/56307737-cf76a980-6102-11e9-8040-f2db89010701.png">
 
-### `npm run eject`
+## Emphasis of the Project
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Further knowledge on the following technologies/principles:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- React
+- JSX
+- Jest and Enzyme Testing
+- API creation
+- Fetch calls
+- Linting
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
