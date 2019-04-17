@@ -34,8 +34,8 @@ class CardContainer extends Component {
     }
   };
 
-  handleNext = event => {
-    event.preventDefault();
+  handleNext = e => {
+    e.preventDefault();
     this.setState({ questionNum: this.state.questionNum + 1 });
   };
 

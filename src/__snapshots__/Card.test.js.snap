@@ -49,6 +49,7 @@ ShallowWrapper {
             onChange={[Function]}
             placeholder=" Type answer here..."
             type="text"
+            value=""
           />
           <div>
             <button
@@ -132,6 +133,7 @@ ShallowWrapper {
               onChange={[Function]}
               placeholder=" Type answer here..."
               type="text"
+              value=""
             />,
             <div>
               <button
@@ -171,6 +173,7 @@ ShallowWrapper {
               "onChange": [Function],
               "placeholder": " Type answer here...",
               "type": "text",
+              "value": "",
             },
             "ref": null,
             "rendered": null,
@@ -295,6 +298,7 @@ ShallowWrapper {
               onChange={[Function]}
               placeholder=" Type answer here..."
               type="text"
+              value=""
             />
             <div>
               <button
@@ -378,6 +382,7 @@ ShallowWrapper {
                 onChange={[Function]}
                 placeholder=" Type answer here..."
                 type="text"
+                value=""
               />,
               <div>
                 <button
@@ -417,6 +422,7 @@ ShallowWrapper {
                 "onChange": [Function],
                 "placeholder": " Type answer here...",
                 "type": "text",
+                "value": "",
               },
               "ref": null,
               "rendered": null,
@@ -595,6 +601,7 @@ ShallowWrapper {
             onChange={[Function]}
             placeholder=" Type answer here..."
             type="text"
+            value=""
           />
           <div>
             <button
@@ -678,6 +685,7 @@ ShallowWrapper {
               onChange={[Function]}
               placeholder=" Type answer here..."
               type="text"
+              value=""
             />,
             <div>
               <button
@@ -717,6 +725,7 @@ ShallowWrapper {
               "onChange": [Function],
               "placeholder": " Type answer here...",
               "type": "text",
+              "value": "",
             },
             "ref": null,
             "rendered": null,
@@ -841,6 +850,7 @@ ShallowWrapper {
               onChange={[Function]}
               placeholder=" Type answer here..."
               type="text"
+              value=""
             />
             <div>
               <button
@@ -924,6 +934,7 @@ ShallowWrapper {
                 onChange={[Function]}
                 placeholder=" Type answer here..."
                 type="text"
+                value=""
               />,
               <div>
                 <button
@@ -963,6 +974,7 @@ ShallowWrapper {
                 "onChange": [Function],
                 "placeholder": " Type answer here...",
                 "type": "text",
+                "value": "",
               },
               "ref": null,
               "rendered": null,
