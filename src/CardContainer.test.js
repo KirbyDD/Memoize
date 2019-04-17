@@ -34,7 +34,8 @@ describe('CardContainer', () => {
 
   beforeEach(() => {
     wrapper = shallow(
-      <CardContainer questions={mockQuestions}/>
+      <CardContainer questions={mockQuestions}               
+      />
     )
   })
 
@@ -43,16 +44,42 @@ describe('CardContainer', () => {
   });
 
   it('should have state with default value', () => {
-    expect(wrapper.state()).toEqual({ questionNum: 1 });
+    expect(wrapper.state()).toEqual({ questionNum: 1, studyList: [], studyListSelected: false });
+  })
+
+  it('addStudyCard should add id to studyList', () => {
+    wrapper.instance().addStudyCard(1);
+    expect(wrapper.state('studyList')).toEqual([1]);
+  })
+
+  it('addStudyCard should remove id to studyList', () => {
+    wrapper.setState({  studyList: [1] });
+    wrapper.instance().addStudyCard(1);
+    expect(wrapper.state('studyList')).toEqual([]);
   })
 
   it('should increment questionNum up one', () => {
-    wrapper.instance().handleNext();
-    expect(wrapper.state()).toEqual({ questionNum: 2 })
+    expect(wrapper.state("questionNum")).toEqual(1)
+    const mockE = { preventDefault: () => {}}
+    wrapper.instance().handleNext(mockE);
+    expect(wrapper.state("questionNum")).toEqual(2)
   })
 
   it('should decrement questionNum down one', () => {
-    wrapper.instance().handlePrev();
-    expect(wrapper.state()).toEqual({ questionNum: 0 })
+    expect(wrapper.state("questionNum")).toEqual(1)
+    const mockE = { preventDefault: () => {}}
+    wrapper.instance().handlePrev(mockE);
+    expect(wrapper.state("questionNum")).toEqual(0)
+  })
+  it('should assign studyListSelected to false', () => {
+    wrapper.setState({  studyListSelected: true });
+    expect(wrapper.state("studyListSelected")).toEqual(true)
+    wrapper.find(".hide-list").simulate('click', { preventDefault:() =>{}});
+    expect(wrapper.state("studyListSelected")).toEqual(false)
+  })
+  it('should assign studyListSelected to true', () => {
+    expect(wrapper.state("studyListSelected")).toEqual(false)
+    wrapper.find(".show-list").simulate('click', { preventDefault:() =>{}});
+    expect(wrapper.state("studyListSelected")).toEqual(true)
   })
 })

@@ -14,19 +14,22 @@ const mockQuestion = {
 
 const handleNext = jest.fn();
 const handlePrev = jest.fn();
-const handleAnswer = jest.fn();
+const addStudyCard = jest.fn();
+let studyList = [1];
 
 
-describe('CardContainer', () => {
+describe('Card', () => {
   let wrapper;
 
   beforeEach(() => {
     wrapper = shallow(
       <Card handleNext={handleNext}
             handlePrev={handlePrev}
+            addStudyCard={addStudyCard}
+            studyList={studyList}
             question={mockQuestion.question}
             answer={mockQuestion.answer}
-            key={mockQuestion.id}
+            id={mockQuestion.id}
             image={mockQuestion.image}/>
     )
   })
@@ -35,22 +38,31 @@ describe('CardContainer', () => {
     expect(wrapper).toMatchSnapshot();
   });
 
+  it('should match snapshot when data is passed in ', () => {
+    studyList = [];
+    expect(wrapper).toMatchSnapshot();
+  });
+
   it('should have state with default value', () => {
     expect(wrapper.state()).toEqual({ answerInput: "", resultMsg: null });
   });
-  it('should call handleAnswer on click of answer button', () => {
+  it('shandleAnswer should return correct answer error message', () => {
     wrapper.setState({  answerInput: 'var'});
     wrapper.find(".answer-button").simulate('click', { preventDefault:() =>{}});
     expect(wrapper.state('resultMsg')).toEqual("Trueeeeeee!")
   });
-  it('should call handleAnswer on click of answer button', () => {
+  it('handleAnswer should return wrong answer error message', () => {
     wrapper.setState({  answerInput: 'let'});
     wrapper.find(".answer-button").simulate('click', { preventDefault:() =>{}});
     expect(wrapper.state('resultMsg')).toEqual("Nahh try again!")
   });
-  it('should update the state of the answerInput on change', () =>{
+  it('should update the state of the answerInput on change', () => {
     expect(wrapper.state('answerInput')).toEqual("")
     wrapper.instance().captureChange({ target: { value: "var"}} )
     expect(wrapper.state('answerInput')).toEqual("var")
+  });
+  it('should call addStudyCard on click of answer button', () => {
+    wrapper.find(".study-list-button").simulate('click', { preventDefault:() =>{}});
+    expect(addStudyCard).toBeCalled();
   });
 })
